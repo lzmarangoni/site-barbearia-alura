@@ -86,8 +86,8 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url(img_produtos/bg.jpg);
     padding: 10px;
+    background: url(../img_produtos/bg.jpg);
     
 }
 
@@ -205,7 +205,7 @@ th, td {
 
 .conteudo-beneficios {
     width: 640px;
-    margin: 15px auto;
+    margin: 0px auto;
     padding: 0 0 3em;  
 }
 
@@ -256,4 +256,4 @@ th, td {
     .lista-beneficios, .imgBeneficios {
         width: 100%;
     }
-}
+};
