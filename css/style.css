@@ -1,3 +1,4 @@
+/* Padrão de cabeçalho e rodapé para todas as paginas do site*/
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,6 +36,20 @@ nav a {
     color: black
 }
 
+footer{
+    text-align: center;
+    padding: 10px;
+    background: url(../img_produtos/bg.jpg);
+    
+}
+
+.copyright{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/*Pagina produtos.html*/
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -47,7 +62,7 @@ nav a {
     width: 30%;
     text-align: center;
     font-weight: bold;
-    margin:  1.5%;
+    margin: 1%;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
@@ -81,24 +96,17 @@ nav a:hover{
 }
 
 .produtos li:hover h2{
-    font-size: 35px;
+    font-size: 20px;
 }
 
-footer{
-    text-align: center;
-    padding: 10px;
-    background: url(../img_produtos/bg.jpg);
-    
-}
+/*pagina contato.html*/
 
-.copyright{
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 13px;
+.formulario-contato{
+    width: 940px;
+    margin: 15px auto;
 }
-
 form {
-    margin: 40px 00;
+    margin: 40px 0;
 }
 
 form label, form p {
@@ -118,7 +126,7 @@ form label, form p {
     margin: 20px 0; 
 }
 
-.Enviar {
+.enviar {
     width: 40%;
     padding: 20px 0;
     background: orange;
@@ -131,7 +139,7 @@ form label, form p {
     cursor: pointer;
 }
 
-.Enviar:hover {
+.enviar:hover {
     background: darkorange;
     transform: scale(1.2);
 
@@ -237,7 +245,7 @@ th, td {
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .mapa, .beneficios, .video, .mapa-conteudo, .conteudo-beneficios{
+    .caixa, .principal, .mapa, .beneficios, .video, .mapa-conteudo, .conteudo-beneficios, .formulario-contato{
         width: auto;
       
     }
@@ -254,6 +262,45 @@ th, td {
     }
 
     .lista-beneficios, .imgBeneficios {
+        width: 100%;
+    }
+
+    /*contato mobile*/
+    .formulario-padrao{
+        margin: 10px 15px;
+       
+    }
+
+    .input-padrao {
+        width: 88%;
+        
+    }
+
+    .canais-de-atendimento {
+        Margin: 10px 15px;
+    }
+
+    .receber-novidades {
+        Margin: 20px 15px;
+        line-height:0%;
+        font-weight: bold;
+    }
+
+    .btn-enviar {
+       width: auto;
+       margin: 40px auto;
+       text-align: center;
+    }
+
+    table {
+        margin: 40px auto 10px;
+       text-align: center;
+    }
+
+    .produtos {
+        width: auto;
+    }
+    .produtos li {
         width: 100%;
     }
 };

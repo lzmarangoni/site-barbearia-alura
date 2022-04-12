@@ -2,9 +2,11 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Produtos</title>   
+        <meta name="viewport" content="width=device-width"> 
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+        <title>Contato</title>   
     </head>
 
     <body>
@@ -21,33 +23,37 @@
                 </div>
         </header>
        
-        <main>
+        <main class="formulario-contato">
             <form>
-                <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" class="input-padrao">
+                <div class="formulario-padrao">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao">
 
-                <label for="email">E-mail</label>
-                <input type="e-mail" id="email" class="input-padrao">
+                    <label for="email">E-mail</label>
+                    <input type="e-mail" id="email" class="input-padrao">
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao">
 
-                <label for="mensagem">Mensagem</label>
-                <textarea cols="72" rows="10" id="mensagem" class="input-padrao"></textarea>
-
-                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="50" rows="10" id="mensagem" class="input-padrao"></textarea>
+                </div>
+                <div class="canais-de-atendimento">
                     <p>Como você gostaria de receber nosso contato?</p>                    
                     
                     <label for="email-radio"><input type="radio" name="radio" id="email-radio">Email</label>
                    
                     <label for="telefone-radio"><input type="radio" name="radio" id="telefone-radio">Telefone</label>
 
-                    <label for="whatsapp-radio"><input type="radio" name="radio" id="whatsapp-radio">Whatsapp</label>
+                    <label for="whatsapp-radio"><input type="radio" name="radio" id="whatsapp-radio">Whatsapp</label>   
                     
                 </div>
-
-                <label><input type="checkbox" class="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
-                <input type="submit" value="Enviar formulário" class="Enviar">
+                <div class="receber-novidades">
+                    <label><input type="checkbox" class="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+                </div>
+                <div class="btn-enviar">
+                     <input type="submit" value="Enviar formulário" class="enviar">
+                </div>
             </form>
 
             <table>
